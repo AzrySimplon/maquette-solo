@@ -1,0 +1,131 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+/* import Young Font */
+@font-face {
+    font-family: 'Young Serif Variable';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/young-serif@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/young-serif@latest/latin-400-normal.woff) format('woff');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* import Outfit Font */
+@font-face {
+    font-family: 'Outfit Variable';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400, 600, 700;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/outfit:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@media (max-width: 500px) {}
+
+@media (min-width: 500px) {
+    body {
+        background-color: var(--stone-100);
+    }
+
+    main {
+        background-color: var(--white);
+        width: 50%;
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main-text-div {
+    margin: 20px;
+}
+
+h1,
+h2 {
+    font-family: "Young Serif Variable";
+    font-weight: 400;
+}
+
+h1,
+p,
+li,
+tr :first-child {
+    color: var(--stone-900);
+}
+
+h2,
+tr :last-child {
+    color: var(--brown-800);
+}
+
+h3 {
+    color: var(--rose-800);
+}
+
+p,
+h3,
+li,
+tr {
+    font-family: "Outfit Variable";
+}
+
+img {
+    width: 100%;
+}
+
+.prep-container {
+    background-color: var(--rose-50);
+    border-radius: 20px;
+    width: 80%;
+    justify-self: center;
+    padding: 10px;
+}
+
+p {
+    font-size: 16px;
+    width: 100%;
+}
+
+.nutrition-table {
+    width: 100%;
+}
+
+ol ::marker,
+tr :last-child {
+    color: var(--brown-800);
+    font-family: "Outfit Variable";
+    font-weight: 700;
+}
+
+.prep-container>ul>li>span,
+.instruct-list>li>span {
+    font-weight: 700;
+}
+
+hr,
+#hr-table>td {
+    border-top: 1px solid var(--stone-150);
+}
